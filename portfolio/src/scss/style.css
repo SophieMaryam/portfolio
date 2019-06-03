@@ -4,20 +4,54 @@
    
 html, body { 
   background: white;
+  transition: 0.3s all;
+  margin: 0;
+  top: 0;
 }
 
-h1#fullName {
-  font-family: 'Raleway Dots';
-  font-size: 15px;
-}
-
-/* ---- particles.js container ---- */
+/* ---- Particles.js container ---- */
   
 #particles-js {
   width: 100%;
   height: 100%;
   background: white;
   z-index: -1;
+  background-position: cover;
+}
+
+/* ---- Navbar ---- */
+#navbar {
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  position:fixed;
+}
+
+.navbar-options {
+  float: right;
+}
+
+.navbar-options a {
+  float: right;
+  font-family: 'Raleway Dots';
+  text-align: center;
+  padding: 14px 15px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-options a:hover {
+  border-top: 4px solid orange;
+}
+
+.navbar-options a:active {
+  color: orange;
+}
+
+#landing-page-container {
+  display: inline-block;
 }
 
 /* ---- Typewriter Animation ---- */
@@ -34,11 +68,11 @@ h1#fullName {
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
-  border-right: .10em solid orange;
+  border-right: 1px solid orange;
   font-weight: bold;   
 }
 
-#animtypewriter {
+#anim-typewriter {
   animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
@@ -53,162 +87,136 @@ h1#fullName {
   to { border-right-color: orange; }
 } 
 
-/* ---- Arrow Animation ---- */
+/* ---- Name Button Animation ---- */
 
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* height: 100%; */
+#fullName-container {
+  width: auto;
+  margin: auto;
+  background: transparent;
+  float: left;
 }
 
-ul li {
-  /* margin: 0 0; */
+#fullName {
   font-family: 'Raleway Dots';
-  list-style-type: none;
-}
-
-.the-arrow {
-  width: 1px;
-  transition: all 0.2s;
-}
-.the-arrow.-left {
-  position: absolute;
-  top: 60%;
-  left: 0;
-}
-.the-arrow.-left > .shaft {
-  width: 0;
-  background-color: orange;
-}
-.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
-  width: 0;
-  background-color: orange;
-}
-
-.the-arrow.-left > .shaft:before {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-.the-arrow.-left > .shaft:after {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-
-.the-arrow.-right {
-  top: 2px;
-}
-.the-arrow.-right > .shaft {
-  width: 1px;
-  transition-delay: 0.2s;
-}
-.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
-  width: 9px;
-  transition-delay: 0.3s;
-  transition: all 0.3s;
-}
-.the-arrow.-right > .shaft:before {
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
-}
-.the-arrow.-right > .shaft:after {
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
-}
-.the-arrow > .shaft {
-  background-color: orange;
-  display: block;
-  height: 1px;
-  position: relative;
-  transition: all 0.2s;
-  transition-delay: 0;
-  will-change: transform;
-}
-.the-arrow > .shaft:before, .the-arrow > .shaft:after {
-  background-color: #A9A9A9;
-  display: block;
-  height: 1px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transition: all 0.2s;
-  transition-delay: 0;
-}
-.the-arrow > .shaft:before {
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
-}
-.the-arrow > .shaft:after {
-  -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
-}
-
-.animated-arrow {
-  display: inline-block;
-  color: black;
-  font-size: 1.25em;
-  font-style: italic;
+  padding-left: 15px;
+  text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
-  position: relative;
-  transition: all 0.2s;
+  position: absolute;
+  letter-spacing: 4px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  background: transparent;
+  outline: none;
+  font-size: 17px;
+  color: black;
 }
-.animated-arrow:hover {
-  color: #808080;
+
+#fullName::after, #fullName::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  -webkit-transform: skewX(0deg);
+          transform: skewX(0deg);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -2;
 }
-.animated-arrow:hover > .the-arrow.-left > .shaft {
-  width: 64px;
-  transition-delay: 0.1s;
+#fullName::before {
   background-color: orange;
+  top: -1rem;
+  left:0rem;
 }
-.animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
-  width: 8px;
-  transition-delay: 0.1s;
-  background-color:orange;
+#fullName::after {
+  background-color: transparent;
+  top: 0.1rem;
+  left: 0.2rem;
 }
-.animated-arrow:hover > .the-arrow.-left > .shaft:before {
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
+#fullName:hover::before, #fullName:hover::after {
+  top: 0;
+  -webkit-transform: skewx(0deg);
+          transform: skewx(0deg);
 }
-.animated-arrow:hover > .the-arrow.-left > .shaft:after {
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
+#fullName:hover::after {
+  left: 0rem;
 }
-.animated-arrow:hover > .main {
-  -webkit-transform: translateX(17px);
-          transform: translateX(17px);
-  -webkit-transform: translateX(80px);
-          transform: translateX(80px);
+#fullName:hover::before {
+  left: 8.75rem;
 }
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft {
-  width: 0;
-  -webkit-transform: translateX(200%);
-          transform: translateX(200%);
-  transition-delay: 0;
+
+/* Scroll Down */
+
+.scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0;
+  width: 13px;
+  height: 13px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: 9;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+	-webkit-animation: fade_move_down 4s ease-in-out infinite;
+	-moz-animation:    fade_move_down 4s ease-in-out infinite;
+	animation:         fade_move_down 4s ease-in-out infinite;
 }
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
-  width: 0;
-  transition-delay: 0;
-  transition: all 0.1s;
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
-.animated-arrow > .main {
-  display: flex;
-  align-items: center;
-  transition: all 0.2s;
+
+/* About Page */
+
+#about {
+  height:100%;
+	width:100%;
 }
-.animated-arrow > .main > .text {
-  margin: 0 16px 0 0;
-  line-height: 1;
+
+.about-img {
+  height: 400px;
+  width: 400px;
+  margin: 50px auto;
+  padding-top: 75px;
+  font-size: 3em;
+  box-sizing: border-box;
 }
-.animated-arrow > .main > .the-arrow {
-  position: relative;
+
+.about-biography {
+  font-family: 'Raleway Dots';
+  font-weight: bold;
+  height: 400px;
+  width: 400px;
+  margin: 50px auto;
+  padding-top: 75px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  box-sizing: border-box;
+}
+
+.changeColor {
+  background-color:black;
 }

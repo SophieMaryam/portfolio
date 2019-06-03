@@ -1,3 +1,8 @@
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load("particles-js", "../src/assets/particles.json", () => {
+  console.log('callback - particles.js config loaded');
+});
+
 var express = require('express');
 
 const app = express();
@@ -8,10 +13,6 @@ app.use(express.static('src'));
 // Allow front-end access to node_modules folder
 app.use('/scripts', express.static(`${__dirname}/node_modules/`));
 
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load("particles-js", "../src/assets/particles.json", () => {
-  console.log('callback - particles.js config loaded');
-});
 
 // Listen for HTTP requests on port 3000
 app.listen(port, () => {
