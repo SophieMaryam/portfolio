@@ -8,13 +8,13 @@
       }
     },
     "color": {
-      "value:": "#596840"
+      "value:": "#7FFF00"
     },
     "shape": {
-      "type": "circle",
+      "type": "none",
       "stroke": {
         "width": 0,
-        "color": "#434e30"
+        "color": "#7FFF00"
       }
     },
     "opacity": {
@@ -27,6 +27,13 @@
         "sync": false
       }
     },
+      "bubble": {
+        "distance": 800,
+        "size": 80,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
     "size": {
       "value": 5,
       "random": true,
