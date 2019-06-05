@@ -3,6 +3,7 @@ particlesJS.load("particles-js", "../src/assets/particles.json", () => {
   console.log('callback - particles.js config loaded');
 });
 
+// import "bootstrap";
 var express = require('express');
 
 const app = express();
