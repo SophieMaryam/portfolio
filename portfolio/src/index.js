@@ -11,6 +11,7 @@
 </script>
 
 <script>
-$(function() {
-$("#navigation").load("navigation.html");
-});</script>
+  $(function() {
+   $("#navigation").load("navigation.html");
+  });
+</script>
