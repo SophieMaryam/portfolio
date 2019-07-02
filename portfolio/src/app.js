@@ -1,5 +1,4 @@
 var express = require("express");
-// const particles = require('particles.js');
 
 const app   = express();
 const port  = process.env.PORT || 3000;

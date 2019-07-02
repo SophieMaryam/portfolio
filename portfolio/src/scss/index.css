@@ -64,23 +64,6 @@ html, body {
   .side-nav a {font-size: 18px;}
 }
 
-/* ---- Particles.js container ---- */
-  
-/* #particles-js canvas {
-  width: 100%;
-  height: 100%;
-  background: white;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: hidden; 
-} */
-
 /* ---- Navbar ---- */
 #navbar {
   width: 100%;
