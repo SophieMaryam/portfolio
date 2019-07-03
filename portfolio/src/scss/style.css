@@ -3,19 +3,25 @@
 /* ---- base ---- */
    
 html, body { 
-  transition: 0.3s all;
   margin: 0;
   padding: 0;
   height: 100%;
   background-color: black;
+  transition: 0.3s all;
+  overflow-y: scroll
 }
 
-.navbar-menu {
+.changeColor {
+  background: white;
+}
+
+#navbar {
   font-size: 30px;
   cursor: pointer;
   color: white;
-  font-family: 'Passion One', cursive;
-  font-weight: bold
+  font-family: 'Lalezar', cursive;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
 .side-nav {
@@ -38,7 +44,7 @@ html, body {
   color: #818181;
   display: block;
   transition: 0.3s;
-  font-family: 'Passion One', cursive;
+  font-family: 'Lalezar', cursive;
   text-transform: uppercase;
 }
 
@@ -54,27 +60,22 @@ html, body {
   margin-left: 50px;
 }
 
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
 @media screen and (max-height: 450px) {
   .side-nav {padding-top: 15px;}
   .side-nav a {font-size: 18px;}
 }
 
 /* ---- Navbar ---- */
-#navbar {
+/* #navbar {
   width: 100%;
   position:fixed;
   top: 0;
   left:0;
-}
+} */
 
-.navbar-options a {
+/* .navbar-options a {
   float: right;
-  font-family: 'Passion One', cursive;
+  font-family: 'Francois One', sans-serif;
   text-align: center;
   text-decoration: none;
   font-size: 17px;
@@ -89,53 +90,44 @@ html, body {
 
 .navbar-options a:active {
   color: orange;
+} */
+
+/* ---- Cover ---- */
+.cover-content {
+  /* position: absolute; */
+  left: 0%;
+  top: 50%;
+  text-align: center;
+  color: white; 
+  width: 900px;
+  margin-left: 400px;
+  margin-right: 400px; 
 }
 
-/* ---- Typewriter Animation ---- */
-
-#welcomeMessage {
-  margin: 0 auto;
-  font-family: 'Passion One', cursive;
-  position: absolute;
-  font-size: 15px; 
+.cover-heading {
+  font-family: 'Lalezar', cursive;
+  font-size: 50px; 
   text-transform: uppercase; 
-  top: 50%;  
-  left: 50%; 
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);
-  border-right: 1px solid orange;
-  color: white; 
   font-weight: bold;
 }
 
-#anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+.lead {
+  font-family: 'Spectral', serif;
+  color: white;
+  font-weight: lighter;
 }
-
-@keyframes typewriter {
-  from { width: 0; }
-  to { width: 755px; }
-}
-
-@keyframes blinkTextCursor{
-  from { border-right-color: transparent; }
-  to { border-right-color: orange; }
-} 
 
 /* ---- Name Button Animation ---- */
 
-#fullName-container {
+/* #fullName-container {
   width: auto;
   margin: auto;
   background: transparent;
   float: left;
-}
+} */
 
-#fullName {
-  font-family: 'Passion One', cursive;
+/* #fullName {
+  font-family: 'Josefin Slab', serif;
   padding-left: 15px;
   text-transform: uppercase;
   text-decoration: none;
@@ -180,7 +172,7 @@ html, body {
 }
 #fullName:hover::before {
   left: 140px;
-}
+} */
 
 /* Scroll Down */
 
@@ -227,17 +219,11 @@ html, body {
 
 /* About Page */
 
-#about {
+#section-about {
   height:100%;
-  width:100%;
+  width:100%; 
   z-index:2;
   position: relative;
-}
-
-#about-container {
-  /* display: inline-block; */
-  /* margin: 0 auto; */
-
 }
 
 .about-img {
@@ -255,7 +241,7 @@ html, body {
 }
 
 .about-biography {
-  font-family: 'Passion One', cursive;
+  font-family: 'Lalezar', cursive;
   font-weight: bold;
   height: 400px;
   width: 400px;
@@ -267,3 +253,27 @@ html, body {
   box-sizing: border-box;
   text-align: justify;
 }
+
+/* Blogs */
+.section-blogs {
+  font-family: 'Lalezar', cursive;
+  color: white;
+}
+
+.articles {
+  width: 300px;
+}
+
+.article-img {
+  width: 300px;
+  height: 300px;
+}
+
+.article-img:hover {
+  opacity: 0.5;
+}
+
+.article-title {
+  padding-top: 30px;
+}
+
