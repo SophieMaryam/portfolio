@@ -4,30 +4,34 @@
     <meta charset="utf-8">
     <title>Sophie van Wersch</title>
     <meta name="author" content="Sophie van Wersch" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Passion+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar|Spectral&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="scss/style.css">
   </head>
   <body>
-    <div>
-      <div id="home">
-        <span class="navbar-menu" onclick="openNav()">&#9776; Menu</span>
-        <div id="side-navbar" class="side-nav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#about">About</a>
-          <a href="#project">Projects</a>
-          <a href="#blogs">Blogs</a>
-          <a href="#contact">Contact</a> 
-        </div>
-        
-          <div id="welcomeMessage">
-            <h1 id="anim-typewriter"> Hi, I'm Sophie and I'm a Front-end Developer. </h1> 
-          </div>
+    <div class="container">
+      <div class="row my-0 mr-md-auto navs">
+        <nav class="navbar navbar-expand-md fixed-top" id="navbar" onclick="openNav()">&#9776; Menu</span>
+      </div>
+      <div id="side-navbar" class="side-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#section-about">About</a>
+        <a href="#section-project">Projects</a>
+        <a href="#section-blogs">Blogs</a>
+        <a href="#section-contact">Contact</a> 
+      </div>
+    </div>
+      <div id="section-home">
+        <div role="main" class="inner cover col-lg-6 cover-content">
+          <p class="cover-heading"> Creating responsive, animated, & user-friendly websites </p> 
+          <p class="lead"> Sophie van Wersch / Front-end Developer </p>
         </div>
         <div class="scroll-down"></div>
       </div>
-      <div id="about">
+
+      <!-- <div id="container section-about">
         <div class="about-container">
           <div class="about-img-container" data-aos="fade-right">
               <img class="about-img" src="../public/images/IMG-20170513-WA0008.jpg" alt="Image of Sophie van Wersch">
@@ -35,24 +39,66 @@
           <div class="about-biography" data-aos="fade-left">
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
           </div>
+        </div> -->
+      <!-- </div> -->
+      
+    <div class="container section-blogs" id="section-blogs">
+      <div class="row blog-list">
+        <div class="articles col-lg-4">
+            <a href="https://shecancode.io/blog/video-games-not-just-a-boys-club-anymore?rq=sophie%20van%20wersch"><img class="article-img" src="../public/images/videogames.jpeg"></a>
+            <p class="article-title">Video Games: Not Just A 'Boys Club' Anymore</p>
+            <p class="article-tag">Gaming is an industry both males and females enjoy. So why is it that the guys are getting all the fun?</p>
+            <p class="company-name">SheCanCode</p>                
+        </div>
+        <div class="articles col-lg-4">
+            <a href="https://shecancode.io/blog/how-startups-can-attract-top-female-talent"><img img class="article-img"  src="../public/images/diversity.jpg"></a>
+            <p class="article-title">How Startups Can Attract Top Female Talent</p>
+            <p class="article-tag">Numbers may be low for employing women, but that doesn’t mean startups can’t find solutions to change that…</p>
+            <p class="company-name">SheCanCode</p>                
+        </div>
+        <div class="articles col-lg-4">
+            <a href="https://shecancode.io/blog/diversity-a-business-strategy-that-works?rq=sophie%20van%20wersch"><img img class="article-img"  src="../public/images/breakingout.jpeg"></a>
+            <p class="article-title">Diversity: A Business Strategy That Works</p>
+            <p class="article-tag">Not investing in a diverse workforce is a huge drawback for business. </p>
+            <p class="company-name">SheCanCode</p>                
         </div>
       </div>
     </div>
+  
+
     
 
     <!-- scripts -->
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
     <script>
-        function openNav() {
-          document.getElementById("side-navbar").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-        }
-        
-        function closeNav() {
-          document.getElementById("side-navbar").style.width = "0";
-          document.getElementById("main").style.marginLeft= "0";
-        }
-    </script>
-
+      function openNav() {
+        document.getElementById("side-navbar").style.width = "250px";
+        document.getElementById("navbar").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("side-navbar").style.width = "0";
+        document.getElementById("navbar").style.marginLeft= "0";
+      }
+      </script> 
+      <script type="text/javascript">
+      $(document).ready(function () {
+        $(function() {
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 50) {
+                $("body").addClass("changeColor")
+              }
+              if ($(this).scrollTop() < 50) {
+                $("body").removeClass("changeColor")
+              }
+          });
+        });
+      });
+      </script>
+      <script>
+      AOS.init({
+        duration: 1200,
+      });
+      </script>
   </body>
 </html>
