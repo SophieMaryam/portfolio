@@ -1,178 +1,50 @@
-
-/* ============================================================================= */
-/* ---- base ---- */
+/* ---- Base ---- */
    
 html, body { 
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: black;
   transition: 0.3s all;
-  overflow-y: scroll
 }
 
-.changeColor {
-  background: white;
-}
-
-#navbar {
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
-  font-family: 'Lalezar', cursive;
-  font-weight: bold;
-  padding-left: 10px;
-}
-
-.side-nav {
+header,
+#home {
   height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: white;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.side-nav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-  font-family: 'Lalezar', cursive;
-  text-transform: uppercase;
-}
-
-.side-nav a:hover {
-  color: #f1f1f1;
-}
-
-.side-nav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .side-nav {padding-top: 15px;}
-  .side-nav a {font-size: 18px;}
+  background-color: black;
 }
 
 /* ---- Navbar ---- */
-/* #navbar {
-  width: 100%;
-  position:fixed;
-  top: 0;
-  left:0;
-} */
 
-/* .navbar-options a {
-  float: right;
-  font-family: 'Francois One', sans-serif;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
+.nav-link {
   color: white;
-  font-weight: bold;
-  padding: 10px 16px;
+  font-family: 'Spectral', serif;
+  font-weight: 100;
 }
 
-.navbar-options a:hover {
-  border-top: 4px solid orange;
+.top-nav-collapse {
+  background-color: #24355C;
+}
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #24355C;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #24355C;
+  }
 }
 
-.navbar-options a:active {
-  color: orange;
-} */
-
-/* ---- Cover ---- */
-.cover-content {
-  /* position: absolute; */
-  left: 0%;
-  top: 50%;
-  text-align: center;
-  color: white; 
-  width: 900px;
-  margin-left: 400px;
-  margin-right: 400px; 
-}
+/* ---- Home ---- */
 
 .cover-heading {
   font-family: 'Lalezar', cursive;
-  font-size: 50px; 
-  text-transform: uppercase; 
-  font-weight: bold;
 }
 
-.lead {
+.cover-paragraph {
   font-family: 'Spectral', serif;
-  color: white;
-  font-weight: lighter;
+  font-weight: 100;
 }
-
-/* ---- Name Button Animation ---- */
-
-/* #fullName-container {
-  width: auto;
-  margin: auto;
-  background: transparent;
-  float: left;
-} */
-
-/* #fullName {
-  font-family: 'Josefin Slab', serif;
-  padding-left: 15px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: bold;
-  position: absolute;
-  letter-spacing: 4px;
-  margin: 0 auto;
-  padding: 16px 24px;
-  background: transparent;
-  outline: none;
-  font-size: 17px;
-  color: white;
-  left: 0;
-}
-
-#fullName::after, #fullName::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  z-index: -2;
-
-}
-#fullName::before {
-  background-color: orange;
-  top: -5px;
-  left: 0px;
-}
-#fullName::after {
-  background-color: transparent;
-  top: 9px;
-  left: 3.2px;
-}
-#fullName:hover::before, #fullName:hover::after {
-  top: 0px;
-  -webkit-transform: skewx(10deg);
-          transform: skewx(10deg);
-}
-#fullName:hover::after {
-  left: 0px;
-}
-#fullName:hover::before {
-  left: 140px;
-} */
 
 /* Scroll Down */
 
@@ -188,8 +60,8 @@ html, body {
 	text-shadow: 0;
   width: 13px;
   height: 13px;
-  border-bottom: 2px solid orange;
-  border-right: 2px solid orange;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
   left: 50%;
   -webkit-transform: translate(-50%, 0%) rotate(45deg);
   -moz-transform: translate(-50%, 0%) rotate(45deg);
@@ -217,13 +89,20 @@ html, body {
   100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
 
-/* About Page */
+/* About */
 
-#section-about {
+#about {
   height:100%;
   width:100%; 
   z-index:2;
   position: relative;
+}
+
+.about-title {
+  font-family: 'Lalezar', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 100px;
 }
 
 .about-img {
@@ -241,32 +120,34 @@ html, body {
 }
 
 .about-biography {
-  font-family: 'Lalezar', cursive;
+  font-family: 'Spectral', serif;
   font-weight: bold;
   height: 400px;
   width: 400px;
   margin: 50px auto;
   padding-top: 75px;
   text-align: center;
-  color: white;
+  color: black;
   font-size: 30px;
   box-sizing: border-box;
   text-align: justify;
 }
 
 /* Blogs */
-.section-blogs {
+.blogs {
   font-family: 'Lalezar', cursive;
   color: white;
+  text-align: justify;
+  margin-top: 200px;
 }
 
 .articles {
-  width: 300px;
+  width: 350px;
 }
 
 .article-img {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
 }
 
 .article-img:hover {
