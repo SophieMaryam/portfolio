@@ -4,12 +4,14 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   transition: 0.3s all;
 }
 
 header,
 #home {
   height: 100%;
+  width: fit-content;
   background-color: black;
 }
 
