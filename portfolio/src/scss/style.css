@@ -15,23 +15,44 @@ header,
 
 /* ---- Navbar ---- */
 
+.navbrand-container:hover {
+  border: 1px solid #00FFFF;
+}
+.navbar-brand {
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-left: 15px;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
 .nav-link {
   color: white;
-  font-family: 'Spectral', serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 100;
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  border-top: 1px solid #00FFFF;
+  color: white;
 }
 
 .top-nav-collapse {
-  background-color: #24355C;
-}
+  background-color: black;
+} 
+
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
-    background-color: #24355C;
+    background-color: black;
   }
 }
 @media (min-width: 800px) and (max-width: 850px) {
   .navbar:not(.top-nav-collapse) {
-    background-color: #24355C;
+    background-color: black;
   }
 }
 
@@ -44,6 +65,11 @@ header,
 .cover-paragraph {
   font-family: 'Spectral', serif;
   font-weight: 100;
+  padding-top: 10px;
+}
+
+.hr {
+  background-color: #00FFFF;
 }
 
 /* Scroll Down */
@@ -90,59 +116,48 @@ header,
 }
 
 /* About */
-
-#about {
-  height:100%;
-  width:100%; 
-  z-index:2;
-  position: relative;
-}
-
-.about-title {
+.section-title {
   font-family: 'Lalezar', cursive;
-  text-transform: uppercase;
   text-align: center;
-  padding-top: 100px;
+  margin-top: 100px;
 }
 
-.about-img {
-  height: 600px;
-  width: 400px;
-  margin: 50px auto;
-  padding-top: 75px;
-  font-size: 3em;
-  box-sizing: border-box;
-  margin-top: 400px;
+.ab-container {
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.about-img-container {
-  float: left;
-}
-
-.about-biography {
-  font-family: 'Spectral', serif;
-  font-weight: bold;
+.ab-img {
   height: 400px;
   width: 400px;
-  margin: 50px auto;
-  padding-top: 75px;
-  text-align: center;
-  color: black;
-  font-size: 30px;
-  box-sizing: border-box;
-  text-align: justify;
 }
+
+.div3 {
+  flex: 100%;
+  order: 3;
+  margin-top: 20px;
+}
+
+.ab-bio {
+  font-family: 'Spectral', serif;
+  font-weight: bold;
+  color: black;
+  text-align: justify;
+} 
 
 /* Blogs */
-.blogs {
-  font-family: 'Lalezar', cursive;
-  color: white;
-  text-align: justify;
-  margin-top: 200px;
+#blogs {
+  margin-top: 100px;
 }
 
+.bl-para {
+  font-family: 'Spectral', serif;
+  /* max-width: 800px; */
+}
 .articles {
   width: 350px;
+  font-family: 'Spectral', serif;
 }
 
 .article-img {
