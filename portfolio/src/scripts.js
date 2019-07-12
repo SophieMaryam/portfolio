@@ -8,11 +8,9 @@
       if (scroll > offset + height) {
         $('.nav-link').css("color","black");
         $('.navbar-brand').css("color","black");
-        $('.nav-link:hover').addClass("border-top");
       } else {
         $('.nav-link').css("color","white");
         $('.navbar-brand').css("color","white");
-        $('.nav-link').removeClass("border-top");
       }
     });
   });
