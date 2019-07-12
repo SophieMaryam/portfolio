@@ -148,6 +148,14 @@ header,
   text-align: justify;
 } 
 
+/* Projects */
+
+.pr-img {
+  border: 1px solid black;
+  width: 350px;
+  height: 350px;
+}
+
 /* Blogs */
 #blogs {
   margin-top: 100px;
