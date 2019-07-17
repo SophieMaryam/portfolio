@@ -3,9 +3,9 @@
 
     $(window).scroll( () => {
       let scroll = $(window).scrollTop();
-      let offset = $('.cover').offset().top; 
-      let height = $('.cover').height(); 
-      if (scroll > offset + height) {
+      let offset = $('#home').offset().top; 
+      let height = $('#home').height(); 
+      if (scroll > offset + height - 28) {
         $('.nav-link').css("color","black");
         $('.navbar-brand').css("color","black");
       } else {
