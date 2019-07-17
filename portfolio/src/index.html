@@ -11,13 +11,18 @@
     <!-- Aos CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS File -->
-    <link rel="stylesheet" href="../public/scss/style.css">
+    <link rel="stylesheet" href="scss/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Sophie van Wersch</title>
   </head>
   <body>
-    <div id="particles-js"></div>
+    <div id="particles-js">
+      <!-- <canvas 
+        class="particles-js-canvas-el" 
+        style="width: 100%; height: 100%"
+      >
+      </canvas> -->
     <header class="cover">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar navbar-white white">
@@ -62,6 +67,7 @@
       </div>
       <div class="scroll-down"></div>
     </header>
+  </div>
 
     
     <main id="about" class="mt-5">
@@ -269,8 +275,10 @@
 
   <!-- Scripts -->
   <!-- Particle JS -->
-  <script src="particles.js" defer="defer"></script>
-  <script src="particles-config.js"></script>
+  <!-- <script src="../assets/particles.js"></script>
+  <script src="../assets/particles-config.js"></script>
+  <script src="../assets/particles.json"></script> -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -286,10 +294,11 @@
     });
   </script>
   <script type="text/javascript" src="scripts.js"></script>
-  <script>
+
+  <!-- <script>
     particlesJS.load('particles-js', 'assets/particle.json', () => {
       console.log('callback - particles.js config loaded');
     });
-</script>
+  </script> -->
   </body>
 </html>
