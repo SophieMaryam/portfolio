@@ -86,7 +86,7 @@ header {
 /* ---- Home ---- */
 
 .cover-heading {
-  font-family: 'Lalezar', cursive;
+  
 }
 
 .cover-paragraph {
@@ -187,9 +187,9 @@ header {
 /* Projects */
 
 .pr-img {
-  border: 1px solid black;
-  /* width: 350px; */
-  height: 350px;
+  /* border: 1px solid black; */
+  width: 200px;
+  height: 200px;
 }
 
 /* Blogs */
@@ -199,15 +199,13 @@ header {
 
 .bl-para {
   font-family: 'Spectral', serif;
-  /* max-width: 800px; */
+==
 }
 .articles {
-  width: 350px;
   font-family: 'Spectral', serif;
 }
 
 .article-img {
-  width: 350px;
   height: 350px;
 }
 
