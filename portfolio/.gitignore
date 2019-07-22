@@ -1,0 +1,4 @@
+# find a match by directory #
+#############################
+**/node_modules
+**/bin
