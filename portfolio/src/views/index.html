@@ -207,25 +207,25 @@
             <p class="font-spectral text-center col-8">If you are interested in collaborating, feel free to send me a message and I will get back to you as soon as possible! Further contact details are found below. </p>
           </div>
           <div class="card-body px-lg-5 pt-0 col-8 offset-2 font-spectral">
-            <form style="color: black;" action="https://formspree.io/email@domain.tld" method="POST">
+            <form mailto:someone@example.com method="POST" enctype="text/plain">
               <div class="md-form mt-4 mb-3">
-                <label for="materialContactFormName">Name</label>
-                <input type="text" id="materialContactFormName" class="form-control">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" type="text" name="name" class="form-control">
               </div>
               <div class="md-form mt-4 mb-3">
-                <label for="materialContactFormEmail">E-mail</label>
-                <input type="email" id="materialContactFormEmail" class="form-control">
+                <label for="contact-email">E-mail</label>
+                <input id="contact-email" type="email" name="email" class="form-control">
               </div>
               <div class="md-form mt-4 mb-3">
-                <label for="materialContactFormSubject">Subject</label>
-                <input type="email" id="materialContactFormSubject" class="form-control">
+                <label for="contact-subject">Subject</label>
+                <input id="contact-subject" type="subject" name="subject" class="form-control">
               </div>
               <div class="md-form mt-4 mb-3">
-                <label for="materialContactFormMessage">Message</label>
-                <textarea id="materialContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" class="form-control md-textarea" rows="3"></textarea>
               </div>
               <div class="text-center mt-4">
-                <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Send</button>
+                <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit" value="Send">Send</button>
               </div>
             </form>
           </div>
@@ -238,28 +238,28 @@
   <footer class="page-footer black-background font-small text-white" style="width:100%;">
     <div class="container mt-5 mb-4 text-center text-md-left font-spectral">     
       <div class="row">
-        <div class="col-md-2 col-lg-2 col-xl-5 mx-auto mb-4 mt-5">
+        <div class="col-sm-6 col-md-3 col-lg-5 col-xl-5 mx-auto mb-4 mt-5">
           <h6 class="text-uppercase font-weight-bold">
             <strong>Collaboration</strong>
           </h6>
-          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>If you are interested in collaborating, please feel free to contact me above. </p>
           <p>A pdf version of my CV can be found <a href="../../public/assets/pdf/CV_sophie_van_wersch.pdf" class="text-white font-weight-bold">here.</a></p>
         </div>
-        <div class="col-md-2 col-lg-2 col-xl-4 mx-auto mb-4 mt-5">
+        <div class="col-sm-6 col-md-3 col-lg-2 col-xl-5 mx-auto mb-4 mt-5">
           <h6 class="text-uppercase white-text font-weight-bold">
             <strong >Contact</strong>
           </h6>
-          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p><i class="fas fa-home mr-2"></i></i> Amsterdam, Netherlands</p>
           <p><i class="fa fa-envelope mr-2"></i> sophievanwersch@hotmail.com</p>
           <p><i class="fa fa-phone mr-2"></i> + 31 627384235</p>
         </div>
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-5">
+        <div class="col-sm-6 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-5">
           <h6 class="text-uppercase text-white font-weight-bold">
             <strong>Socials</strong>
           </h6>
-          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <a 
             class="text-white" href="https://www.linkedin.com/in/sophie-van-wersch-085664120/"
           >
@@ -273,7 +273,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-copyright text-center py-3 font-spectral">© 2019 Copyright: Sophie van   Wersch
+    <div class="footer-copyright text-center py-3 font-spectral">© 2019 Copyright: Sophie van Wersch
     </div>
   </footer>
 
