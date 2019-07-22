@@ -45,9 +45,9 @@ header {
 .navbrand-container:hover {
   border: 1px solid #00FFFF;
 }
+
 .navbar-brand {
   color: white;
-  font-family: 'Spectral', serif;
   padding-left: 15px;
 }
 
@@ -86,11 +86,10 @@ header {
 /* ---- Home ---- */
 
 .cover-heading {
-  
+  font-family: 'Lalezar', cursive;
 }
 
 .cover-paragraph {
-  font-family: 'Spectral', serif;
   font-weight: 100;
   padding-top: 10px;
 }
@@ -148,10 +147,10 @@ header {
   margin-bottom: 150px;
 }
 
-.ab-title {
+.title {
   margin-top: 100px;
   text-align: center;
-  /* position: relative; */
+  font-family: 'Lalezar', cursive;
 }
 
 .ab-container {
@@ -161,7 +160,7 @@ header {
 }
 
 .ab-img {
-  height: 400px;
+  height: 500px;
   width: 400px;
 }
 
@@ -172,7 +171,6 @@ header {
 }
 
 .ab-bio {
-  font-family: 'Spectral', serif;
   color: black;
   text-align: justify;
   max-height: 400px;
@@ -187,7 +185,6 @@ header {
 /* Projects */
 
 .pr-img {
-  /* border: 1px solid black; */
   width: 200px;
   height: 200px;
 }
@@ -197,11 +194,7 @@ header {
   margin-top: 100px;
 }
 
-.bl-para {
-  font-family: 'Spectral', serif;
-==
-}
-.articles {
+.font-spectral {
   font-family: 'Spectral', serif;
 }
 
@@ -217,8 +210,32 @@ header {
   padding-top: 30px;
 }
 
+.read-more {
+  color: black;
+}
+
+
+.read-more:hover {
+  text-decoration: none;
+  color: black;
+  font-size: 16.5px;
+}
+
 /* Footer */
 
-.page-footer {
+.black-background {
   background-color: black;
 }
+
+
+/* All blogs */
+
+.all-blogs {
+  margin-top: 200px;
+}
+
+/* .navbar-brand {
+  color: black;
+  font-family: 'Spectral', serif;
+  padding-left: 15px;
+} */
