@@ -37,30 +37,35 @@ header {
   z-index: -1;
 }
 
-#about {
-  width: 100%;
+/* ---- Global CSS ---- */
+
+.title {
+  margin-top: 90px;
+  text-align: center;
+  font-family: 'Spectral', serif;
 }
+
+.black-background {
+  background-color: black;
+}
+
+.font-spectral {
+  font-family: 'Spectral', serif;
+}
+
 /* ---- Navbar ---- */
 
 .navbrand-container:hover {
   border: 1px solid #00FFFF;
 }
 
-.navbar-brand {
+.navbar-text {
   color: white;
-  padding-left: 15px;
+  margin-left: 15px;
 }
 
 .navbar-brand:hover {
   color: white;
-}
-
-.nav-link {
-  color: white;
-  font-family: 'Spectral', serif;
-  font-weight: 100;
-  margin-left: 15px;
-  text-transform: uppercase;
 }
 
 .nav-link:hover {
@@ -72,14 +77,15 @@ header {
   background-color: black;
 } 
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .navbar:not(.top-nav-collapse) {
     background-color: black;
   }
 }
-@media (min-width: 800px) and (max-width: 850px) {
+@media (min-width: 430px) and (max-width: 450px) {
   .navbar:not(.top-nav-collapse) {
-    background-color: black;
+    margin-top: 100px;
+    background-color: black
   }
 }
 
@@ -98,7 +104,7 @@ header {
   background-color: #00FFFF;
 }
 
-/* Scroll Down */
+/* ---- Scroll Down ---- */
 
 .scroll-down {
 	position: absolute;
@@ -141,16 +147,10 @@ header {
   100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
 
-/* About */
+/* ---- About ---- */
 
-#about {
-  margin-bottom: 150px;
-}
-
-.title {
-  margin-top: 100px;
-  text-align: center;
-  font-family: 'Lalezar', cursive;
+.section-bottom {
+  margin-bottom: 90px;
 }
 
 .ab-container {
@@ -182,20 +182,16 @@ header {
   margin-left: 90px;
 }
 
-/* Projects */
+/* ---- Projects ---- */
 
 .pr-img {
   width: 200px;
   height: 200px;
 }
 
-/* Blogs */
+/* ---- Blogs ---- */
 #blogs {
   margin-top: 100px;
-}
-
-.font-spectral {
-  font-family: 'Spectral', serif;
 }
 
 .article-img {
@@ -221,21 +217,8 @@ header {
   font-size: 16.5px;
 }
 
-/* Footer */
-
-.black-background {
-  background-color: black;
-}
-
-
-/* All blogs */
+/* ---- All Blogs ---- */
 
 .all-blogs {
-  margin-top: 200px;
+  margin-top: 150px;
 }
-
-/* .navbar-brand {
-  color: black;
-  font-family: 'Spectral', serif;
-  padding-left: 15px;
-} */
