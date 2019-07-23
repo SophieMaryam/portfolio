@@ -13,6 +13,9 @@ app.get("/", (req, res, next) => {
   res.sendFile("src/views/index.html");
 });
 
+app.post("/form", (req, res, next) => {
+
+})
 // Listen for HTTP requests on port 3000
 app.listen(port, () => {
   console.log("listening on %d", port);
