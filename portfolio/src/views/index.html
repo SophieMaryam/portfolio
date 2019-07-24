@@ -207,7 +207,7 @@
             <p class="text-center col-8">If you are interested in collaborating, feel free to send me a message and I will get back to you as soon as possible! Further contact details are found below. </p>
           </div>
           <div class="card-body px-lg-5 pt-0 col-8 offset-2">
-            <form action="send" method="post" enctype="text/plain">
+            <form action="send-email" method="post">
               <!-- <div>
                 <h3>Message Sent</h3>
               </div> -->
@@ -217,12 +217,12 @@
               </div>
               <div class="md-form mt-4 mb-3">
                 <label for="contact-email">E-mail</label>
-                <input id="contact-email" type="email" name="email" class="form-control">
+                <input id="contact-email" type="email" name="email" class="form-control" required>
               </div>
               <div class="md-form mt-4 mb-3">
                 <label for="contact-subject">Subject</label>
-                <input id="contact-subject" type="subject" name="subject" class="form-control">
-              </div>
+                <input id="contact-subject" type="text" name="subject" class="form-control" >
+              </div> 
               <div class="md-form mt-4 mb-3">
                 <label for="contact-message">Message</label>
                 <textarea id="contact-message" name="message" class="form-control md-textarea" rows="3"></textarea>
@@ -287,20 +287,16 @@
   <script src="../assets/particles.json"></script> -->
   <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
   <script type="text/javascript" src="../../app.js"></script>
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <!-- Popper - Bootstrap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <!-- Bootstrap -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  <!-- Aos --> 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/javascript/jquery.min.js"></script>
+  <script src="/javascript/popper.min.js"></script>
+  <script src="/javascript/bootstrap.min.js"></script>
+  <script src="/javascript/main.js"></script>
+  <script src="/javascript/aos.js"></script>
   <script>  
     AOS.init({
       duration: 1200,
     });
   </script>
-  <script type="text/javascript" src="/javascript/main.js"></script>
 
   <!-- <script>
     particlesJS.load('particles-js', 'assets/particle.json', () => {
