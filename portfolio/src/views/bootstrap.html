@@ -5,11 +5,12 @@
       <meta name="author" content="Sophie van Wersch" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=no maximum-scale=1">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <!-- Google font -->
+      <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="/css/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/>
       <link href="https://fonts.googleapis.com/css?family=Lalezar|Spectral&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="../../public/scss/style.css">
-      <title>Blogs</title>
+      <link rel="stylesheet" href="/scss/style.css">
+      <title>Bootstrap Projects</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -33,27 +34,48 @@
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#blogs">Blogs</a>
+            <a class="nav-link" href="#blogs">All Blogs</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
-          </ul>
-        </div>
+        </ul>
+      </div>
     </nav>
 
-    <section>
-      <div class="container font-spectral">
-          <h1 class="title text-center text-uppercase">Bootstrap Projects</h1>
-      </div>
-      <div>
-          <h3 class="title text-center text-uppercase">State of the Art</h1>
-          <p>This is a website using bootstrap, html, css as well as the Google Maps API. </p>
-          <p>Click <a href="">here </a>for GitHub link</p>
+    <section class="all-blogs project bg-light" id="all-blogs">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center">
+            <h2 class="mb-4">Boostrap Project</h2>
+          </div>
+        </div>
+        <div class="slick-container">
+          <div class="slider">
+            <div class="item">
+              <img src="/assets/images/reveal.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="item">
+              <img src="/assets/images/reveal.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="item">
+              <img src="/assets/images/reveal.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="item">
+              <img src="/assets/images/reveal.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="item">
+              <img src="/assets/images/reveal.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="item">
+              <img src="/assets/images/reveal.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </section>
-       <!-- Footer -->
+
+    <!-- Footer -->
     <footer class="page-footer black-background font-small text-white" style="width:100%;">
       <div class="container mt-5 mb-4 text-center text-md-left font-spectral">     
         <div class="row">
@@ -95,7 +117,22 @@
       <div class="footer-copyright text-center py-3 font-spectral">© 2019 Copyright: Sophie van Wersch
       </div>
     </footer>
+
+    <script type="text/javascript" src="../../app.js"></script>
+    <script src="/javascript/popper.min.js"></script>
+    <script src="/javascript/bootstrap.min.js"></script>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/javascript/main.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.item').slick({
+          dots: true,
+          centerMode: true,
+        });
+      });
+    </script>
   </body>
 </html>
-
-<script src="javascript/owl.carousel.min.js"></script>
