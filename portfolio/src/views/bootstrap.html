@@ -14,9 +14,9 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top black-background  scrolling-navbar">
+    <nav class="navbar navbar-expand-lg fixed-top black-background  scrolling-navbar navbar-white white">
       <div>
-        <a class="navbar-brand navbar-text font-spectral text-uppercase" href="#">S V W</a>
+        <a class="navbar-brand navbar-text font-spectral text-uppercase" href="/">S V W</a>
       </div>
       <button
         class="navbar-toggler"
@@ -32,16 +32,16 @@
       <div class="collapse navbar-collapse" id="navbarToggle">
           <ul class="navbar-nav ml-auto smooth-scroll font-spectral">
             <li>
-              <a class="navbar-text nav-link" href="#about">about</a>
+              <a class="navbar-text nav-link" href="/#about">about</a>
             </li>
             <li>
-              <a class="navbar-text nav-link" href="#projects">projects</a>
+              <a class="navbar-text nav-link" href="/#pr-hr">projects</a>
             </li>
             <li>
-              <a class="navbar-text nav-link" href="#blogs">blogs</a>
+              <a class="navbar-text nav-link" href="/#blogs-hr">blogs</a>
             </li>
             <li>
-              <a class="navbar-text nav-link" href="#contact">contact</a>
+              <a class="navbar-text nav-link" href="/#contact-hr">contact</a>
             </li>
           </ul>
         </div>
@@ -57,7 +57,7 @@
         <div class="col-md-12 mt-5">
           <h3>State of the Art</h3>
           <p>The repository for State of the Art can be found 
-            <a href="">here</a>
+            <a href="" class="text-black font-weight-bold">here</a>
           </p>
         </div>
         <div class="slick-container">
@@ -143,10 +143,9 @@
     <script type="text/javascript">
       $(document).ready(function(){
         $('.slick-container').slick({
-          dots: true,
+          slidesToShow: 1,
           centerMode: true,
-          prevArrow: '<button type="button" data-role="none" class="slick-prev">Previous</button>',
-          nextArrow: '<button type="button" data-role="none" class="slick-next">Next</button>',
+          dots: true,
         });
       });
     </script>
