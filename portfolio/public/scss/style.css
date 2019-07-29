@@ -55,10 +55,6 @@ header {
 
 /* ---- Navbar ---- */
 
-.navbrand-container:hover {
-  border: 1px solid #00FFFF;
-}
-
 .navbar-text {
   color: white;
   margin-left: 15px;
