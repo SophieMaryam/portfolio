@@ -199,7 +199,6 @@ header {
   color: black;
 }
 
-
 .read-more:hover {
   text-decoration: none;
   color: black;
@@ -210,6 +209,11 @@ header {
 
 .all-blogs {
   margin-top: 150px;
+  margin-bottom: 80px;
+}
+
+.repo-link {
+  margin-top: 70px;
 }
 
 /* Slick */
@@ -219,14 +223,13 @@ header {
   padding: 40px;
   width: 80%;
   color: #333;
-  background: #419be0;
 }
 
-.slick-slide {
-  text-align: center;
-  color: #419be0;
-  background: white;
+.slick-dots li button:before {
+  font-size: 20px;
+  line-height: 20px;
 }
+  
 
 /* ---- Loader ---- */
 
