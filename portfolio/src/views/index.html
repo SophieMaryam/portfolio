@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="author" content="Sophie van Wersch" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=no maximum-scale=1">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Lalezar|Spectral&display=swap" rel="stylesheet">
-    <!-- Aos CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- CSS File -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="/css/aos.css" rel="stylesheet">
     <link rel="stylesheet" text="('text/html')" href="/scss/style.css">
+     <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Lalezar|Spectral&display=swap" rel="stylesheet">  
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Devicon icon -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <title>Sophie van Wersch</title>
   </head>
@@ -28,15 +26,15 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar navbar-white white">
         <div class="navbrand-container">
-          <a class="navbar-brand navbar-text font-spectral text-uppercase text-white" href="#">S V W</a>
+          <a class="navbar-brand navbar-text font-spectral text-uppercase" href="#">S V W</a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
-          data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          data-target="#navbarToggle" aria-controls="navbarToggle"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+        <div class="collapse navbar-collapse" id="navbarToggle">
           <ul class="navbar-nav ml-auto smooth-scroll font-spectral">
             <li>
               <a class="navbar-text nav-link" href="#about">about</a>
@@ -102,17 +100,19 @@
         <hr class="hr my-5 justify-content-center">
 
         <!-- Projects -->
-        <section id="projects" class="section-bottom text-center font-spectral">
+        <section id="projects" class="text-center font-spectral">
           <h1 class="title mb-5 text-center">Projects</h1>
           <p class="text-center col-12">Below you can find projects I have created in different front-end frameworks.</p>
           <div class="row mt-5">
             <div class="col-lg-4 col-md-12 mb-4">
               <div class="pr-img mx-auto">
-                <svg viewBox="0 0 128 128">
-                  <path fill="#5B4282" d="M75.701 65.603c-2.334-.768-5.694-.603-10.08-.603h-17.621v23h18.844c2.944 0 5.012-.315 6.203-.535 2.099-.376 3.854-1.104 5.264-1.982 1.409-.876 2.568-2.205 3.478-3.881.908-1.676 1.363-3.637 1.363-5.83 0-2.568-.658-4.54-1.975-6.436-1.316-1.896-3.141-2.965-5.476-3.733zM73.282 55.087c2.317-.688 4.064-1.89 5.239-3.487 1.176-1.598 1.763-3.631 1.763-6.044 0-2.286-.549-4.314-1.646-6.054s-2.662-2.413-4.699-3.056c-2.037-.641-5.53-.446-10.48-.446h-15.459v20h16.587c4.042 0 6.939-.38 8.695-.913zM126 18.625c0-9.182-7.443-16.625-16.625-16.625h-91.75c-9.182 0-16.625 7.443-16.625 16.625v91.75c0 9.182 7.443 16.625 16.625 16.625h91.75c9.182 0 16.625-7.443 16.625-16.625v-91.75zm-35.447 66.12c-1.362 2.773-3.047 4.911-5.052 6.415-2.006 1.504-4.521 2.78-7.544 3.548-3.022.769-6.728 1.292-11.113 1.292h-27.844v-69h27.42c5.264 0 9.485.609 12.665 2.002 3.181 1.395 5.671 3.497 7.474 6.395 1.801 2.898 2.702 5.907 2.702 9.071 0 2.945-.8 5.708-2.397 8.308-1.598 2.602-4.011 4.694-7.237 6.292 4.166 1.222 7.37 3.304 9.61 6.248 2.24 2.945 3.36 6.422 3.36 10.432 0 3.227-.681 6.225-2.044 8.997z">
-                  </path>
-                    </svg>
-                </div>
+                <a href="/bootstrapProjects">
+                  <svg viewBox="0 0 128 128">
+                    <path fill="#5B4282" d="M75.701 65.603c-2.334-.768-5.694-.603-10.08-.603h-17.621v23h18.844c2.944 0 5.012-.315 6.203-.535 2.099-.376 3.854-1.104 5.264-1.982 1.409-.876 2.568-2.205 3.478-3.881.908-1.676 1.363-3.637 1.363-5.83 0-2.568-.658-4.54-1.975-6.436-1.316-1.896-3.141-2.965-5.476-3.733zM73.282 55.087c2.317-.688 4.064-1.89 5.239-3.487 1.176-1.598 1.763-3.631 1.763-6.044 0-2.286-.549-4.314-1.646-6.054s-2.662-2.413-4.699-3.056c-2.037-.641-5.53-.446-10.48-.446h-15.459v20h16.587c4.042 0 6.939-.38 8.695-.913zM126 18.625c0-9.182-7.443-16.625-16.625-16.625h-91.75c-9.182 0-16.625 7.443-16.625 16.625v91.75c0 9.182 7.443 16.625 16.625 16.625h91.75c9.182 0 16.625-7.443 16.625-16.625v-91.75zm-35.447 66.12c-1.362 2.773-3.047 4.911-5.052 6.415-2.006 1.504-4.521 2.78-7.544 3.548-3.022.769-6.728 1.292-11.113 1.292h-27.844v-69h27.42c5.264 0 9.485.609 12.665 2.002 3.181 1.395 5.671 3.497 7.474 6.395 1.801 2.898 2.702 5.907 2.702 9.071 0 2.945-.8 5.708-2.397 8.308-1.598 2.602-4.011 4.694-7.237 6.292 4.166 1.222 7.37 3.304 9.61 6.248 2.24 2.945 3.36 6.422 3.36 10.432 0 3.227-.681 6.225-2.044 8.997z">
+                    </path>
+                  </svg>
+                </a>
+              </div>
               <h4 class="my-4 font-weight-bold">Bootstrap</h4>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
@@ -156,7 +156,7 @@
         <hr class="hr my-5">
 
         <!-- Blogs -->
-        <section id="blogs" class="section-bottom font-spectral"> 
+        <section id="blogs" class="font-spectral"> 
           <h1 class="title mb-5 text-center">Blogs</h1>
           <div class="row d-flex justify-content-center mb-4 mx-auto">
             <p class="text-center col-9">Taking my love of technology and putting them into words. Starting my move towards the tech industry, I wrote articles for SheCanCode and IBM CIC 'Insider' Journal as a means to blablabla.</p>
@@ -180,7 +180,7 @@
             </div>
             <div class="col-sm-6 col-md-4 col-xl-4 mb-3">
               <a href="https://shecancode.io/blog/diversity-a-business-strategy-that-works?rq=sophie%20van%20wersch">
-                <img class="article-img img-fluid" src="/assets/images//diversity.jpg">
+                <img class="article-img img-fluid" src="/assets/images/diversity.jpg">
               </a>
               <p class="article-title font-weight-bold">Diversity: A Business Strategy That Works</p>
               <p class="article-tag">Not investing in a diverse workforce is a huge drawback for business. </p>
@@ -200,7 +200,7 @@
         <hr class="hr my-5">
       
         <!-- Section: Contact -->
-        <section id="contact" class="section-bottom font-spectral">
+        <section id="contact" class="font-spectral">
          <div class="justify-content-center">
           <h1 class="title mb-4 text-center">Contact</h1>
           <div class="row d-flex justify-content-center mb-4">
@@ -280,12 +280,14 @@
     </div>
   </footer>
 
+  <!-- loader -->
+  <!-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div> -->
+
   <!-- Scripts -->
   <!-- Particle JS -->
   <!-- <script src="../assets/particles.js"></script>
   <script src="../assets/particles-config.js"></script>
   <script src="../assets/particles.json"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
   <script type="text/javascript" src="../../app.js"></script>
   <script src="/javascript/jquery.min.js"></script>
   <script src="/javascript/popper.min.js"></script>
