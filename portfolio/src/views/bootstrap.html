@@ -43,33 +43,35 @@
       </div>
     </nav>
 
-    <section class="all-blogs project bg-light" id="all-blogs">
+    <section class="all-blogs">
       <div class="container">
-        <div class="row justify-content-center pb-5">
+        <div class="row justify-content-center">
           <div class="col-md-12 heading-section text-center">
-            <h2 class="mb-4">Boostrap Project</h2>
+            <h1>Boostrap Projects</h1>
           </div>
         </div>
+        <div class="col-md-12 mt-5">
+          <h3>State of the Art</h3>
+          <p>The repository for State of the Art can be found <a href=""> here</a></p>
+        </div>
         <div class="slick-container">
-          <div class="slider">
-            <div class="item">
-              <img src="/assets/images/reveal.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="item">
-              <img src="/assets/images/reveal.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="item">
-              <img src="/assets/images/reveal.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="item">
-              <img src="/assets/images/reveal.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="item">
-              <img src="/assets/images/reveal.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="item">
-              <img src="/assets/images/reveal.jpg" class="img-fluid" alt="">
-            </div>
+          <div class="item">
+            <img src="/assets/images/bootstrap/art/cover.png" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="/assets/images/bootstrap/art/about.png" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="/assets/images/bootstrap/art/gallery.png" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="/assets/images/bootstrap/art/worldnews.png" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="/assets/images/bootstrap/art/contact.png" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="/assets/images/bootstrap/art/footer.png" class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -121,16 +123,19 @@
     <script type="text/javascript" src="../../app.js"></script>
     <script src="/javascript/popper.min.js"></script>
     <script src="/javascript/bootstrap.min.js"></script>
-    <script src="/javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="/javascript/slick.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="/javascript/main.js"></script>
+    <!-- <script src="/javascript/main.js"></script> -->
 
     <script type="text/javascript">
       $(document).ready(function(){
-        $('.item').slick({
+        $('.slick-container').slick({
           dots: true,
           centerMode: true,
+          prevArrow: '<button type="button" data-role="none" class="slick-prev">Previous</button>',
+          nextArrow: '<button type="button" data-role="none" class="slick-next">Next</button>',
         });
       });
     </script>
