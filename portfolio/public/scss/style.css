@@ -145,41 +145,10 @@ header {
 
 /* ---- About ---- */
 
-.ab-container {
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.ab-img {
-  height: 500px;
-  width: 400px;
-}
-
-.div3 {
-  flex: 100%;
-  order: 3;
-  margin-top: 20px;
-}
-
-.ab-bio {
-  color: black;
+.justify {
   text-align: justify;
-  max-height: 400px;
-  max-width: 400px;
-} 
-
-.div3 {
-  font-family: 'Spectral', serif;
-  margin-left: 90px;
 }
 
-/* ---- Projects ---- */
-
-.pr-img {
-  width: 200px;
-  height: 200px;
-}
 
 /* ---- Blogs ---- */
 
@@ -195,7 +164,7 @@ header {
   padding-top: 30px;
 }
 
-.read-more {
+.color-black {
   color: black;
 }
 
@@ -220,9 +189,19 @@ header {
 
 .slick-container {
   margin: 0 auto;
-  padding: 40px;
   width: 80%;
   color: #333;
+  /* background: #419be0; */
+}
+
+.slick-slide{
+  margin: 10px;
+}
+
+.slick-slide img{
+  width: 100%;
+  border: 2px solid black;
+  height: 450px;
 }
 
 .slick-dots li button:before {
