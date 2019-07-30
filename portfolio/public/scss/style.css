@@ -73,6 +73,7 @@ header {
     background-color: black;
   }
 }
+
 @media (min-width: 430px) and (max-width: 450px) {
   .navbar:not(.top-nav-collapse) {
     margin-top: 100px;
@@ -87,7 +88,7 @@ header {
   display: 1;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   .cover-heading {
     font-size: 50px;
   }
@@ -153,10 +154,16 @@ header {
 
 /* ---- About ---- */
 
+@media screen and (min-width: 1200px) {
+  #about {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
 .justify {
   text-align: justify;
 }
-
 
 /* ---- Blogs ---- */
 
@@ -176,7 +183,7 @@ header {
   color: black;
 }
 
-.read-more:hover {
+.color-black:hover {
   text-decoration: none;
   color: black;
   font-size: 16.5px;
@@ -195,7 +202,7 @@ header {
 
 .article-img {
   background-size: cover;
-  background-position: center;
+  background-position: absolute;
 }
 
 /* Projects */
@@ -302,6 +309,3 @@ header {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
-
-
-    
