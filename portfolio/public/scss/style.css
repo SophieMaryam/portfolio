@@ -191,6 +191,13 @@ header {
   background-position: center;
 }
 
+/* Projects */
+
+.pr-img {
+  width: 200px;
+  height: 200px;
+}
+
 /* Slick */
 
 .slick-container {
