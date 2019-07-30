@@ -78,17 +78,17 @@
           <h1 class="title mb-5 font-spectral">
               About me
           </h1>
-          <div class="row col-10 font-spectral justify">
-            <div class="col-xl-5 col-lg-6 col-md-8 mb-4" data-aos="fade-right">
+          <div class="row col-12 font-spectral justify">
+            <div class="col-xl-4 col-lg-6 col-md-5 mb-4" data-aos="fade-right">
               <img class="img-fluid" src="/assets/images/sophievanwersch.jpg" alt="Image of Sophie van Wersch">
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-8" data-aos="fade-left">
+            <div class="col-xl-8 col-lg-6 col-md-7" data-aos="fade-left">
               <p>
-                <span style="font-size:19px;">G</span>raduated with honours from the University College Maastricht with a Bachelors in Arts. During my time in university, I focused primarily on Political Studies and minored in Sociology. However, gradually I felt more interested in the technicalogical industry and  a career path. 
-                I began to teach myself to program in HTML and CSS, and then studied in the New York Design and Coding Academy for three months in their Amsterdam based school. Afterwards, I began a 6-month traineeship at IBM CIC and have since been working as a full time employee building internal web applications.
+                <span style="font-size:19px;">G</span>raduated with honours from the University College Maastricht with a Bachelors in Arts. During university, I focused primarily on Political Studies and minored in Sociology. Nevertheless, I always gravitated towards the technicalogical industry and hoped to start a career there. 
+                I began by first teaching myself to program through online platforms while simultaneously working as a tech blogger for SheCanCode. Then in June 2017, I started a three-month full-Stack developer course at the New York Design and Coding Academy based in Amsterdam. Following the course, I had a 6-month traineeship at IBM CIC and have since been working as a full time employee building internal web applications.
               </p>
             </div>
-              <div class="col-md-8 col-lg-12" data-aos="fade-bottom">
+              <div class="col-12" data-aos="fade-bottom">
                 <p>
                   My programming skills include: HTML5, CSS, SASS, JavaScript (ES5/ES6), Vue.js, Pug/Jade, Node.js, Express.js, Axios, Swift, & Git & Github.
                   <br>
@@ -215,28 +215,28 @@
             <p class="text-center col-8">If you are interested in collaborating, feel free to send me a message and I will get back to you as soon as possible! Further contact details are found below. </p>
           </div>
           <div class="card-body px-lg-5 pt-0 col-8 offset-2">
-            <form action="send-email" method="post">
+            <form action="/send-email" method="POST">
               <!-- <div>
                 <h3>Message Sent</h3>
               </div> -->
               <div class="md-form mt-4 mb-3">
                 <label for="contact-name">Name</label>
-                <input id="contact-name" type="text" name="contactName" class="form-control">
+                <input id="contact-name" type="text" name="contactName" class="form-control"/>
               </div>
               <div class="md-form mt-4 mb-3">
                 <label for="contact-email">E-mail</label>
-                <input id="contact-email" type="email" name="email" class="form-control" required>
+                <input id="contact-email" type="email" name="email" class="form-control" required/>
               </div>
               <div class="md-form mt-4 mb-3">
                 <label for="contact-subject">Subject</label>
-                <input id="contact-subject" type="text" name="subject" class="form-control" >
+                <input id="contact-subject" type="text" name="subject" class="form-control"/>
               </div> 
               <div class="md-form mt-4 mb-3">
                 <label for="contact-message">Message</label>
                 <textarea id="contact-message" name="message" class="form-control md-textarea" rows="3"></textarea>
               </div>
               <div class="text-center mt-4">
-                <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit" value="OK" >Send</button>
+                <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Send</button>
               </div>
             </form>
           </div>
@@ -251,20 +251,30 @@
       <div class="row">
         <div class="col-sm-6 col-md-3 col-lg-5 col-xl-5 mx-auto mb-4 mt-5">
           <h6 class="text-uppercase">
-            <strong>Collaboration</strong>
+            <strong>Collab</strong>
           </h6>
           <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>If you are interested in collaborating, please feel free to contact me. </p>
-          <p>A pdf version of my CV can be found <a href="/assets/pdf/CV_sophie_van_wersch.pdf" class="text-white font-weight-bold">here.</a></p>
+          <p>Interested? Contact me to collaborate!</p>
+          <p>A pdf version of my CV can be found 
+            <a href="/assets/pdf/CV_sophie_van_wersch.pdf" class="text-white font-weight-bold">here.
+            </a>
+          </p>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-2 col-xl-5 mx-auto mb-4 mt-5">
           <h6 class="text-uppercase white-text font-weight-bold">
             <strong >Contact</strong>
           </h6>
           <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p><i class="fas fa-home mr-2"></i></i> Amsterdam, Netherlands</p>
-          <p><i class="fa fa-envelope mr-2"></i> sophievanwersch@hotmail.com</p>
-          <p><i class="fa fa-phone mr-2"></i> + 31 627384235</p>
+          <p>
+            <i class="fas fa-home mr-2"></i>
+            Amsterdam, Netherlands
+          </p>
+          <p>
+            <i class="fa fa-envelope mr-2"></i> sophievanwersch@hotmail.com
+          </p>
+          <p>
+            <i class="fa fa-phone mr-2"></i> + 31 627384235
+          </p>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-5">
           <h6 class="text-uppercase text-white font-weight-bold">
@@ -279,7 +289,9 @@
           <a 
           class="text-white" href="https://www.linkedin.com/in/sophie-van-wersch-085664120/"
         >
-          <p><i class="fab fa-github mr-2"></i> GitHub</p>
+          <p>
+            <i class="fab fa-github mr-2"></i> GitHub
+          </p>
           </a>
         </div>
       </div>
