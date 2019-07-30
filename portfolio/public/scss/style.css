@@ -185,6 +185,11 @@ header {
   margin-top: 70px;
 }
 
+.article-img {
+  background-size: cover;
+  background-position: center;
+}
+
 /* Slick */
 
 .slick-container {
