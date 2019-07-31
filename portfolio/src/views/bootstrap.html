@@ -14,37 +14,34 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top black-background  scrolling-navbar navbar-white white">
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar black-background">
       <div>
-        <a class="navbar-brand navbar-text font-spectral text-uppercase" href="/">S V W</a>
+        <a class="navbar-brand navbar-text font-spectral text-white text-uppercase ml-3" href="/">S V W</a>
       </div>
-      <button
-        class="navbar-toggler"
-        type="button"
+      <button class="navbar-toggler" 
+        type="button" 
         data-toggle="collapse"
-        data-target="#navbarToggle"
-        aria-controls="navbarToggle"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        data-target="#navbarToggle" aria-controls="navbarToggle"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <div class="collapse navbar-collapse" id="navbarToggle">
-          <ul class="navbar-nav ml-auto smooth-scroll font-spectral">
-            <li>
-              <a class="navbar-text nav-link" href="/#about">about</a>
-            </li>
-            <li>
-              <a class="navbar-text nav-link" href="/#project">projects</a>
-            </li>
-            <li>
-              <a class="navbar-text nav-link" href="/#blogs">blogs</a>
-            </li>
-            <li>
-              <a class="navbar-text nav-link" href="/#contact">contact</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navbar-nav ml-auto smooth-scroll font-spectral">
+          <li>
+            <a class="ml-3 text-white nav-link" href="#about">about</a>
+          </li>
+          <li>
+            <a class="ml-3 text-white nav-link" href="#projects">projects</a>
+          </li>
+          <li>
+            <a class="ml-3 text-white nav-link" href="#">blogs</a>
+          </li>
+          <li>
+            <a class="ml-3 text-white nav-link" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <section class="all-blogs font-spectral">
@@ -138,16 +135,6 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="/javascript/slick.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <!-- <script src="/javascript/main.js"></script> -->
-
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('.slick-container').slick({
-          slidesToShow: 1,
-          centerMode: true,
-          dots: true,
-        });
-      });
-    </script>
+    <script src="/javascript/main.js"></script>
   </body>
 </html>
