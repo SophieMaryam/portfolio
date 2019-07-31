@@ -9,13 +9,9 @@ html, body {
   scroll-behavior: smooth;
 }
 
-header {
-   background-color: black;
-   height: 100%;
-}
+header,
 #home {
   height: 100%;
-  width: 100%;
 }
 
 .background {
@@ -50,12 +46,11 @@ header {
 
 /* ---- Navbar ---- */
 
-.navbar-text {
+.navbar-brand:hover {
   color: white;
-  margin-left: 15px;
 }
 
-.navbar-brand:hover {
+.navbar-text {
   color: white;
 }
 
@@ -85,7 +80,6 @@ header {
 
 .cover-heading {
   font-family: 'Lalezar', cursive;
-  display: 1;
 }
 
 @media screen and (max-width: 750px) {
@@ -236,6 +230,11 @@ header {
   line-height: 20px;
 }
   
+/* ---- Contact ---- */
+
+#email-decoy { 
+  display: none; 
+} 
 
 /* ---- Loader ---- */
 
