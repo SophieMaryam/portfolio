@@ -12,16 +12,12 @@
         $(".navbar-brand").css("color","white");
       }
     });
-
-    // // loader
-    //   var loader = function() {
-    //     setTimeout(function() { 
-    //       if($('#ftco-loader').length > 0) {
-    //         $('#ftco-loader').removeClass('show');
-    //       }
-    //     }, 1);
-    //     };
-    //   loader();
+    $(".email-decoy").hide();
+    $('.slick-container').slick({
+      slidesToShow: 1,
+      centerMode: true,
+      dots: true,
+    });
   });
 
 
