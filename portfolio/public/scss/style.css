@@ -148,6 +148,10 @@ header,
 
 /* ---- About ---- */
 
+.about-text {
+  overflow: hidden;
+}
+
 @media screen and (min-width: 1200px) {
   #about {
     padding-left: 100px;
@@ -183,28 +187,13 @@ header,
   font-size: 16.5px;
 }
 
-/* ---- All Blogs ---- */
-
-.all-blogs {
-  margin-top: 150px;
-  margin-bottom: 80px;
-}
-
-.repo-link {
-  margin-top: 70px;
-}
-
-.article-img {
-  background-size: cover;
-  background-position: absolute;
-}
-
 /* Projects */
 
 .pr-img {
   width: 200px;
   height: 200px;
 }
+
 
 /* Slick */
 
@@ -229,82 +218,25 @@ header,
   font-size: 20px;
   line-height: 20px;
 }
+
+/* ---- All Blogs ---- */
+
+.all-blogs {
+  margin-top: 150px;
+  margin-bottom: 80px;
+}
+
+.repo-link {
+  margin-top: 70px;
+}
+
+.article-img {
+  background-size: cover;
+  background-position: absolute;
+}
   
 /* ---- Contact ---- */
 
 #email-decoy { 
   display: none; 
 } 
-
-/* ---- Loader ---- */
-
-#ftco-loader.fullscreen {
-  padding: 0;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  background-color: #fff;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-
-#ftco-loader.show {
-  -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
-  -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
-  transition: opacity .4s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1; }
-
-#ftco-loader .circular {
-  -webkit-animation: loader-rotate 2s linear infinite;
-  animation: loader-rotate 2s linear infinite;
-  position: absolute;
-  left: calc(50% - 24px);
-  top: calc(50% - 24px);
-  display: block;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg); }
-
-#ftco-loader .path {
-  stroke-dasharray: 1, 200;
-  stroke-dashoffset: 0;
-  -webkit-animation: loader-dash 1.5s ease-in-out infinite;
-  animation: loader-dash 1.5s ease-in-out infinite;
-  stroke-linecap: round; }
-
-@-webkit-keyframes loader-rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@keyframes loader-rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@-webkit-keyframes loader-dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0; }
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px; }
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px; } }
-
-@keyframes loader-dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0; }
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px; }
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px; } }
