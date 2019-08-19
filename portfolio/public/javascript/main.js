@@ -1,4 +1,4 @@
-// <!-- jQuery Slick --> 
+// <!-- jQuery --> 
   $(document).ready(() => {
     $(window).scroll( () => {
       let scroll = $(window).scrollTop();
@@ -12,11 +12,13 @@
         $(".navbar-brand").css("color","white");
       }
     });
+
     $(".email-decoy").hide();
-    $('.slick-container').slick({
+
+    $(".slick-container").slick({
       slidesToShow: 1,
       centerMode: true,
-      dots: true,
+      dots: true
     });
   });
 
