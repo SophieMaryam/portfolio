@@ -1,14 +1,17 @@
 module.exports = {
-  root: true,
-  env: {
-    node: true,
+  "root": true,
+  "env": {
+    "node": true,
     "es6": true
 
   },
-  extends: [
+  "extends": [
     "eslint:recommended"
   ],
-  rules: {
+  "parserOptions": {
+    "sourceType": "module"
+  }
+  "rules": {
     "semi": ["error", "always"],
     "quotes": ["error", "double"]
   }
