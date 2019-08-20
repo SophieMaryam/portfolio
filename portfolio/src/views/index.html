@@ -2,22 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="Content-Security-Policy" content="img-src 'self'; font-src 'self' https://fonts.gstatic.com;"> -->
     <meta name="author" content="Sophie van Wersch" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no maximum-scale=1">
-    <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
-    <link href="/css/aos.css" rel="stylesheet">
-    <link rel="stylesheet" text="('text/html')" href="/scss/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lalezar|Spectral&display=auto" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/mdb.min.css" />
+    <link href="/css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="/scss/style.css">
     <title>Sophie van Wersch</title>
   </head>
   <body>
     <div id="particles-js">
     <header class="black-background">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg black-background text-white  fixed-top scrolling-navbar white">
+      <nav class="navbar navbar-expand-lg black-background text-white fixed-top scrolling-navbar">
         <div>
           <a class="navbar-brand navbar-text font-spectral text-uppercase ml-3" href="#">S V W</a>
         </div>
@@ -86,7 +86,7 @@
                   My programming skills include: HTML5, CSS, SASS, JavaScript (ES5/ES6), Vue.js, Pug/Jade, Node.js, Express.js, Axios, Swift, & Git & Github.
                   <br>
                   <br>
-                  My other skills include proficient writing and speaking skills in English, intermediate level Dutch, willingness to learn new skills, teamwork, problem solving, adaptability, and dedication. I am also a certified Scrum Master with experience in an Agile/Scrum environment. 
+                  My other skills include proficient writing and speaking in English, intermediate level Dutch, and I am also a certified Scrum Master with experience in an Agile/Scrum environment. 
                 </p>
             </div>
           </div>
@@ -159,8 +159,10 @@
           <div class="row blog-list">
             <div class="col-sm-6 col-md-4 col-xl-4 mb-3 mx-auto">
               <a href="https://shecancode.io/blog/video-games-not-just-a-boys-club-anymore?rq=sophie%20van%20wersch">
-                <div 
-                  class="article-img" style="background-image:url(' /assets/images/blogs/videogames.jpeg')">
+                <div class="outer-div">
+                  <div 
+                    class="article-img" style="background-image:url(' /assets/images/blogs/videogames.jpeg')">
+                  </div>
                 </div>
               </a>
               <p class="article-title font-weight-bold">Video Games: Not Just A 'Boys Club' Anymore</p>
@@ -169,9 +171,11 @@
             </div>
             <div class="col-sm-6 col-md-4 col-xl-4 mb-3 mx-auto">
               <a href="https://shecancode.io/blog/how-startups-can-attract-top-female-talent">
-                <div 
-                class="article-img" style="background-image:url(' /assets/images/blogs/femaletalent.jpeg')">
-              </div>
+                <div class="outer-div">
+                  <div 
+                  class="article-img" style="background-image:url(' /assets/images/blogs/femaletalent.jpeg')">
+                  </div>
+                </div>
               </a>
               <p class="article-title font-weight-bold">How Startups Can Attract Top Female Talent</p>
               <p class="article-tag">Numbers may be low for employing women, but that doesn’t mean startups can’t find solutions to change that…</p>
@@ -179,8 +183,10 @@
             </div>
             <div class="col-sm-6 col-md-4 col-xl-4 mb-3">
               <a href="https://shecancode.io/blog/diversity-a-business-strategy-that-works?rq=sophie%20van%20wersch">
-                <div 
-                  class="article-img" style="background-image:url(' /assets/images/blogs/diversity.jpg')">
+                <div class="outer-div">
+                  <div 
+                    class="article-img" style="background-image:url(' /assets/images/blogs/diversity.jpg')">
+                  </div>
                 </div>
               </a>
               <p class="article-title font-weight-bold">Diversity: A Business Strategy That Works</p>
@@ -296,12 +302,13 @@
 
 
   <!-- Scripts -->
-  <script type="text/javascript" src="../../app.js"></script>
+  <script src="/../../app.js"></script>
   <script src="/javascript/jquery.min.js"></script>
   <script src="/javascript/popper.min.js"></script>
-  <script src="/javascript/bootstrap.min.js"></script>
-  <script src="/javascript/aos.js"></script>
   <script src="/javascript/main.js"></script>
+  <script src="/javascript/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/js/mdb.min.js"></script>
+  <script src="/javascript/aos.js"></script>
   <script>  
     AOS.init({
       duration: 1200,
