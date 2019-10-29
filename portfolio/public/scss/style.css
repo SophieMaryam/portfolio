@@ -103,6 +103,10 @@ header,
   background-color: #00FFFF;
 }
 
+.pdf:hover {
+  color: #00FFFF;
+}
+
 /* ---- Scroll Down ---- */
 
 .scroll-down {
